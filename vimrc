@@ -19,3 +19,9 @@ set number
 set hlsearch
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Red
+set autowrite
+
+" use vim plug to install vim-go binaries
+call plug#begin()
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+call plug#end()
